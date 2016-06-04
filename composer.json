@@ -1,0 +1,19 @@
+{
+  "name": "marvin_b8/redis-classloader",
+  "description": "A simple redis cache for classloader.",
+  "keywords": ["ClassLoader", "Class-Loader", "Symfony","Drupal 8"],
+  "homepage": "https://github.com/mbutkereit/psr-7-service-provider",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marvin Butkereit"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "autoload": {
+    "psr-4": { "marvinB8\\Component\\ClassLoader\\": "src" }
+  }
+}
