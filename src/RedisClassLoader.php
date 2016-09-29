@@ -1,9 +1,18 @@
 <?php
 namespace marvinB8\Component\ClassLoader;
 
+/**
+ * Class RedisClassLoader.
+ */
 class RedisClassLoader {
 
+  /**
+   * A prefix for the redis entries.
+   *
+   * @var string
+   */
   private $prefix;
+
   /**
    * A class loader object that implements the findFile() method.
    *
@@ -12,6 +21,8 @@ class RedisClassLoader {
   protected $decorated;
 
   /**
+   * A redis client.
+   *
    * @var \Redis
    */
   protected $redis;
@@ -62,7 +73,7 @@ class RedisClassLoader {
   }
 
   /**
-   * Finds a file by class name while caching lookups to APC.
+   * Finds a file by class name while caching lookups to Redis.
    *
    * @param string $class A class name to resolve to file
    *
