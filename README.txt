@@ -1,6 +1,6 @@
 
-##Drupal 8 (/Users/marvin/WebDev/drupal/web/sites/default/settings.php)
-
+## Drupal 8 (/Users/marvin/WebDev/drupal/web/sites/default/settings.php)
+```
 $class_loader->addPsr4('Drupal\\redis\\', DRUPAL_ROOT . '/modules/contrib/redis/src');
 
 if ($settings['hash_salt']) {
@@ -13,3 +13,4 @@ if ($settings['hash_salt']) {
   $redis_loader->register();
   $class_loader = $apc_redis;
 }
+```
